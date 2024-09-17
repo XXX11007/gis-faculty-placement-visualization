@@ -101,8 +101,8 @@ function chart(d3, bilink, data, id, colornone, colorin, colorout) {
   }
   
 async function data(hierarchy, FileAttachment) {
-    // return hierarchy(await FileAttachment("uni-edge.json").json());
-    const file = await FileAttachment("uni-edge.json").json();
+    // return hierarchy(await FileAttachment("./uni-edge.json").json());
+    const file = await FileAttachment("./uni-edge.json").json();
 
     // Check if the file was loaded correctly and is not undefined or empty
     if (!file) {
