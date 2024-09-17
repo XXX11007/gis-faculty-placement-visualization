@@ -204,7 +204,7 @@ export default function define(runtime, observer) {
     const main = runtime.module();
     function toString() { return this.url; }
     const fileAttachments = new Map([
-      ["uni-edge.json", {url: new URL("./files/uni-edge.json", import.meta.url), mimeType: "application/json", toString}]
+      ["uni-edge.json", {url: new URL("uni-edge.json", import.meta.url), mimeType: "application/json", toString}]
     ]);
     main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
     main.variable(observer()).define(["colorout","colorin","md"], _1);
